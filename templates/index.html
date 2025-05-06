@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet"  href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body >
+<div class="wrapper">
+     <header>
+        <a href="/about">About Us</a>
+     </header>
+    <main>
+        <div>
+            <div class="main_form">
+        <div class="wrapper_form">
+            <h1> Зарегестрировать пользователя </h1>
+            <form action="/abracadabra" method="post">
+                <input type="text" name="name" placeholder="Name">
+                <br>
+                <input class="button" type="submit"  value="Зарегистрировать">
+            </form>
+        </div>
+        </div>
+
+
+    </div>
+    </main>
+</div>
+
+
+
+<h2>{{ my_variable }}</h2>
+</body>
+</html>

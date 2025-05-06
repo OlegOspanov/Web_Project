@@ -1,0 +1,4 @@
+.venv
+.idea
+dbname.db
+test.py
