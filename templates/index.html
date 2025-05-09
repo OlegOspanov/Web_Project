@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet"  href="{{ url_for('static', path='/style.css') }}">
-</head>
-<body >
+{% extends "base.html" %}
+
+{% block title %}
+    Главная
+{% endblock %}
+
+{% block body %}
 <div class="wrapper">
      <header>
         <a href="/about">About Us</a>
@@ -27,9 +26,6 @@
     </div>
     </main>
 </div>
-
-
-
 <h2>{{ my_variable }}</h2>
-</body>
+{% endblock %}
 </html>
