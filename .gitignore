@@ -2,3 +2,4 @@
 .idea
 dbname.db
 test.py
+.gitignore
