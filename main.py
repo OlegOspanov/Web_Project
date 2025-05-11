@@ -21,7 +21,6 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory='templates')
 
-"""12345"""
 
 @app.get("/",summary='Главный метод',tags=['Основновные методы'])
 def get_page_index(request: Request):
