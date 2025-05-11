@@ -1,2 +1,2 @@
 # Web_Project
-Прототип приложения на FastApi
+Прототип CRUD-приложения на FastApi
