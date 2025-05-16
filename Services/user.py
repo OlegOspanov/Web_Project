@@ -2,8 +2,8 @@ from database import session, User
 
 
 class CrudUser():
-    def create(self,name):
-        user = User(name=name)
+    def create(self,first_name,second_name,email,password):
+        user = User(first_name=first_name,second_name=second_name,email=email,password = password)
         session.add(user)
         session.commit()
         session.close()
@@ -13,8 +13,8 @@ class CrudUser():
         users = session.query(User).all()
         return users
 
-    def get_one(self,name):
-        user = session.query(User).filter_by(name=name).first()
+    def get_one(self,first_name):
+        user = session.query(User).filter_by(first_name=first_name).first()
         if user:
             return user
         else:

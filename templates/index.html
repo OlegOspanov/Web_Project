@@ -5,27 +5,27 @@
 {% endblock %}
 
 {% block header %}
-    <a href="/about">About Us</a>
+    <a class="header__logo" href="/about"><img src="/static/images/header-logo.svg"><p>Logo</p></a>
+    <nav class="header__nav">
+        <a href="/user_auth">Зарегистрироваться</a>
+        <a href="#">Войти</a>
+    </nav>
 {% endblock %}
 
 {% block content %}
 <div class="wrapper">
 
     <main>
-        <div>
+        <div class="first_window">
             <div class="main_form">
         <div class="wrapper_form">
-            <h1> Зарегестрировать пользователя </h1>
-            <form action="/abracadabra" method="post">
-                <input type="text" name="name" placeholder="Name">
-                <br>
-                <input class="button" type="submit"  value="Зарегистрировать">
-            </form>
+            <h1> Качай железо!</h1>
+            <h3>No pain,no gain!</h3>
         </div>
         </div>
+            <img class="main-pic" src="static/images/main-pic.png" alt="image">
     </div>
     </main>
 </div>
 <h2>{{ my_variable }}</h2>
 {% endblock %}
-</html>

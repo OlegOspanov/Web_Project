@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block header %}
+
+    <a href="/" class="header__logo">
+        <img src="/static/images/logo.svg">
+        <p>Logo</p>
+        <a>
+            <h2>New</h2>
+{% endblock %}
+{% block content %}
+    <main>
+        <div class="user_form">
+            <h3>Регистрация</h3>
+            <form action="/abracadabra" method="post">
+                <input type="text" name="first_name" placeholder="Name">
+                <input type="text" name="second_name" placeholder="Second name">
+                <input type="text" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="password">
+                <br>
+                <input class="button" type="submit"  value="Зарегистрировать">
+            </form>
+        </div>
+    </main>
+{% endblock %}
+

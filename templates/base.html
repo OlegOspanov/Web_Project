@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet"  href="{{ url_for('static', path='/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,500,600,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poetsen:regular,500,600,800&display=swap" rel="stylesheet">
     <title>
         {% block title %}
@@ -16,10 +17,10 @@
 
         {% endblock %}
     </header>
+    <main class="wrapper">
+        {% block content %}
 
-
-    {% block content %}
-
-    {% endblock %}
+        {% endblock %}
+    </main>
 </body>
 </html>

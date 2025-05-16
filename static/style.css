@@ -3,58 +3,110 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
- }
+}
 
 body {
-    font-family: "Poetsen", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color:#CDF567;
 
 }
 
 a {
     text-decoration: none;
 }
+
 .wrapper {
-    max-width:1000px;
-    margin:0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 header {
-    max-width:1000px;
-    height:100px;
-    margin:0 auto;
-    align-item:center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+
 }
 
 .main_form {
-    padding:20px;
-    margin:0 auto;
-    width:300px;
-    height:220px;
-    border:solid 2px grey;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
 }
 
 h1 {
-    margin-bottom:20px;
-    color:red;
-    font-size: 20px;
+    margin-bottom: 20px;
+    color: red;
+    font-size: 50px;
 }
 
-.wrapper_form {
-     /*padding-left:60px;*/
+h3 {
+    color:white;
+    font-size: 30px;
+    color: red;
+    margin-bottom: 20px;
 }
 
 .button {
-     color:red;
-     margin:10px 60px;
+    color: red;
+    margin: 10px 30px;
+    padding:0 10px
 }
 
 input {
-     border:solid 2px grey;
-     margin-bottom:10px;
+    border: solid 2px grey;
+    margin-bottom: 10px;
 }
 
 form {
-    padding-left:20px;
+    padding-left: 8px;
+}
+
+.header__logo {
+    display: flex;
+    font-size:26px;
+    font-weight:600;
+    color:rgb(140,76,235);
+}
+
+.header__nav {
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.header__nav a {
+    border-radius:15px;
+    background-color:rgb(94,226,157);
+    padding:10px 20px;
+}
+
+.first_window {
+    display:flex;
+    justify-content:space-between;
+}
+
+.main-pic{
+    width: 500px;
+    height: 500px;
+}
+
+.user_form{
+    padding-left:50px;
+    padding-top:30px;
+    margin:0 auto;
+    width: 300px;
+    height: 330px;
+    border: solid 2px grey;
+    border-radius:10px;
+}
+
+.user_form input {
+    border-radius:10px;
+    height: 30px;
+    padding:0 10px
 }

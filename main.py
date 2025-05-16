@@ -30,5 +30,9 @@ def get_page_index(request: Request):
 def get_page_about(request: Request):
     return templates.TemplateResponse(name='about.html', context={'request': request})
 
+@app.get("/user_auth",summary='Главный метод',tags=['Основновные методы'])
+def get_page_about(request: Request):
+    return templates.TemplateResponse(name='user_auth.html', context={'request': request})
+
 if __name__ == '__main__':
     uvicorn.run('main:app')
